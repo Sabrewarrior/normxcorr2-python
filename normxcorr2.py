@@ -49,7 +49,7 @@ def normxcorr2(template, image, mode="full"):
     template = np.sum(np.square(template))
     out = out / np.sqrt(image * template)
 
-    # Remove any divisions by 0.
-    out[np.where(np.isnan(out))] = 0
-
+    # Remove any divisions by 0 or very close to 0
+    out[np.where(np.logical_not(np.isfinite(out)))] = 0
+    
     return out
