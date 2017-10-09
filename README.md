@@ -9,4 +9,4 @@ scipy - 0.18.1
 numpy - 1.13.1
 
 ## Blog
-http://lordsabre.blogspot.ca/2017/09/matlab-normxcorr2-implemented-in-python.html
+[Blogspot](http://lordsabre.blogspot.ca/2017/09/matlab-normxcorr2-implemented-in-python.html)
